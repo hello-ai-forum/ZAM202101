@@ -23,7 +23,7 @@ language: ja
 
 # 書名
 #booktitle: {name: "Re:VIEWテンプレート", file-as: "reviewテンプレート"}
-booktitle: {name: "ZENKEI AI MAGAZINE", file-as: "ZAM"}
+booktitle: {name: "月刊 ZENKEI AI MAGAZINE", file-as: "ZAM"}
 subtitle: ２０２１年１月号
 
 # 著者名。「, 」で区切って複数指定できる
