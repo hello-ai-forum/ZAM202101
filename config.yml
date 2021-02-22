@@ -117,7 +117,8 @@ epubversion: 3
 htmlversion: 5
 
 # 目次として抽出する見出しレベル
-toclevel: 3
+#toclevel: 3
+toclevel: 2
 
 # 採番の設定。採番させたくない見出しには「==[nonum]」のようにnonum指定をする
 #
@@ -135,10 +136,11 @@ toc: true
 # cover: null
 #
 # 表紙に配置し、書籍の影絵にも利用する画像ファイル。省略した場合はnull (画像を使わない)。画像ディレクトリ内に置いてもディレクトリ名は不要(例: cover.jpg)
-# coverimage: cover.png
+coverimage: ZAM202101-cover.jpg
 #
 # 表紙の後に大扉ページを作成するか。省略した場合はnull (作成しない)
-titlepage: true
+#titlepage: true
+titlepage: null
 #
 # 自動生成される大扉ページを上書きするファイル。ファイル名を指定すると大扉として入る (PDFMaker向けにはLaTeXソース断片、EPUBMaker向けにはHTMLファイル)
 # titlefile: null
@@ -157,6 +159,8 @@ colophon: true
 
 # 裏表紙データファイル (PDFMaker向けにはLaTeXソース断片、EPUBMaker向けにはHTMLファイル)
 # backcover: null
+backcover: backcover.tex
+#backcover: backcover.html
 
 # プロフィールページファイル  (PDFMaker向けにはLaTeXソース断片、EPUBMaker向けにはHTMLファイル)。ファイル名を指定すると著者紹介として入る
 # profile: null
@@ -373,6 +377,7 @@ pdfmaker:
   # 仕上がりサイズ+塗り足し3mmありのPDFまたはIllustratorファイル（PDF互換オプション付き）を推奨。
   # 拡縮はされず「そのまま」貼り付けられる
   # coverimage: cover-a5.ai
+  coverimage: ZAM202101-cover.pdf
   #
   # TeXコンパイル前に実行するプログラム。変換後のTeXソースを調整したいときに使用する。
   # 渡される引数1=作業用展開ディレクトリ、引数2=呼び出しを実行したディレクトリ
