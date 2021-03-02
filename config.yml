@@ -64,6 +64,7 @@ edt: ["ZAM 編集部"]
 #pbl: TechBooster
 pbl: ZENKEI AI FORUM
 # a-prt, prt: 印刷所
+prt: ちょ古っ都製本工房
 # prt: TechBooster
 # a-red, red: 項目の枠組起草者
 # a-rev, rev: 評論者
@@ -71,8 +72,10 @@ pbl: ZENKEI AI FORUM
 # a-ths, ths: 監督者
 # a-trc, trc: 筆記・タイプ作業者
 # a-trl, trl: 翻訳者
+cov: 市來健吾
 
 # contact: 連絡先
+contact: https://forum.ai.zenkei.com/
 
 # 刊行日(省略した場合は実行時の日付)
 #date: 2019-4-14
@@ -156,6 +159,7 @@ titlepage: null
 colophon: true
 # デフォルトの奥付における、各項目の記載順序
 # colophon_order: ["aut", "csl", "trl", "dsr", "ill", "cov", "edt", "pbl", "contact", "prt"]
+colophon_order: ["edt", "pbl", "contact", "cov", "prt"]
 
 # 裏表紙データファイル (PDFMaker向けにはLaTeXソース断片、EPUBMaker向けにはHTMLファイル)
 # backcover: null
