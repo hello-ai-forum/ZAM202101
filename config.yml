@@ -64,6 +64,7 @@ edt: ["ZAM 編集部"]
 #pbl: TechBooster
 pbl: ZENKEI AI FORUM
 # a-prt, prt: 印刷所
+prt: ちょ古っ都製本工房 (https://www.chokotto.jp/)
 # prt: TechBooster
 # a-red, red: 項目の枠組起草者
 # a-rev, rev: 評論者
@@ -71,8 +72,10 @@ pbl: ZENKEI AI FORUM
 # a-ths, ths: 監督者
 # a-trc, trc: 筆記・タイプ作業者
 # a-trl, trl: 翻訳者
+cov: 市來健吾
 
 # contact: 連絡先
+contact: https://forum.ai.zenkei.com/
 
 # 刊行日(省略した場合は実行時の日付)
 #date: 2019-4-14
@@ -82,7 +85,7 @@ date: 2021-2-24
 # [["初版第1刷の日付", "初版第2刷の日付"], ["第2版第1刷の日付"]]
 # 日付の後ろを空白文字で区切り、任意の文字列を置くことも可能。
 #history: [["2020-12-26 技術書典10版 v1.0.0"]]
-history: [["2021-2-24 初版発行"]]
+history: [["2021-2-24 初版発行（オンライン）"], ["2021-3-31 改訂版発行（第1刷）"]]
 # 権利表記(配列で複数指定可)
 # rights: (C) 2016 Re:VIEW Developers
 #rights: (C) 2017-2021 TechBooster
@@ -96,7 +99,8 @@ rights: (C) 2021 ZENKEI AI FORUM
 # coverage: 内容の範囲や領域(配列で複数指定可)
 
 # デバッグフラグ。nullでないときには一時ファイルをカレントディレクトリに作成し、削除もしない
-debug: null
+#debug: null
+debug: true
 
 # 固有IDに使用するドメイン。省略した場合は時刻に基づくランダムUUIDが入る
 #urnid: urn:uid:https://github.com/TechBooster/ReVIEW-Template
@@ -156,6 +160,7 @@ titlepage: null
 colophon: true
 # デフォルトの奥付における、各項目の記載順序
 # colophon_order: ["aut", "csl", "trl", "dsr", "ill", "cov", "edt", "pbl", "contact", "prt"]
+colophon_order: ["edt", "pbl", "contact", "cov", "prt"]
 
 # 裏表紙データファイル (PDFMaker向けにはLaTeXソース断片、EPUBMaker向けにはHTMLファイル)
 # backcover: null
@@ -429,6 +434,7 @@ pdfmaker:
   # 表紙挿入時に表紙のページ番号名を「cover」とし、偶数ページ扱いにして大扉前に白ページが入るのを防ぐ。デフォルトはtrue
   # use_cover_nombre: true
   # pdfmaker:階層を使うものはここまで
+  hook_beforetexcompile: ./hook_beforetexcompile.rb
 
 # 以下のパラメータを有効にするときには、
 # webmaker:
