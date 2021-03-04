@@ -8,7 +8,7 @@
 ## 公開ページ
 
 * [WEB 版](https://zenkei-ai-forum.github.io/ZAM202101/)
-* [PDF 版](https://zenkei-ai-forum.github.io/ZAM202101/ZAM-202101.pdf)
+* [PDF 版](https://zenkei-ai-forum.github.io/ZAM202101/ZAM202101-v2.pdf)
 
 ---
 
