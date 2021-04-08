@@ -4,6 +4,9 @@
 * [Re:VIEW](https://reviewml.org/ja/) を使っています。
 * [TechBoosterさんの Re:VIEW テンプレート](https://github.com/TechBooster/ReVIEW-Template) を使っています。
 
+## リンク
+
+* ZENKEI AI FORUM 2021年1月のイベント： [YouTube](https://youtu.be/YLhwFth0OtE)
 
 ## 公開ページ
 
